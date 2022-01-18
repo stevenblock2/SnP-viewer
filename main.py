@@ -13,8 +13,9 @@ if file:
     filename = 'file.'+file.name.split('.')[-1]
     with open(filename,"wb") as f:
         f.write((file).getbuffer())
-    ntwk = rf.Network(filename)
-    remove(filename)
+    with st.spinner(text="Loading File..."):
+        ntwk = rf.Network(filename)
+        remove(filename)
     ntwk.name = file.name
     plot = ntwk.s_db
     plot_shape = shape(plot[0])
