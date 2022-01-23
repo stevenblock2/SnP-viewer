@@ -7,9 +7,9 @@ from itertools import product
 from os import remove
 pd.options.plotting.backend = "plotly"
 st.set_option('deprecation.showPyplotGlobalUse', False)
-st.set_page_config(layout="wide")
 st.set_page_config(
      page_title="S-Parameter/Touchstone Viewer",
+     page_icon = st.image('https://www.clipartmax.com/png/middle/479-4796538_smithred-smith-chart-logo.png')
      layout="wide",
      initial_sidebar_state="expanded",
      menu_items={
