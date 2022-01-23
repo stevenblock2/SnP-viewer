@@ -8,6 +8,17 @@ from os import remove
 pd.options.plotting.backend = "plotly"
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.set_page_config(layout="wide")
+st.set_page_config(
+     page_title="S-Parameter/Touchstone Viewer",
+     layout="wide",
+     initial_sidebar_state="expanded",
+     menu_items={
+         'About': "This is a simple application to view and save views of Touchstone Data Files. This Application supports s1p,s2p,s3p,s4p data and beyond! \
+         Your graphs are fully interactive and can be saved as seperate PNG's. \
+         No data is saved in this application so your data is your own. Enjoy!"
+     }
+ )
+
 file = st.sidebar.file_uploader('Upload Touchstone File Here',)
 if file:
     filename = 'file.'+file.name.split('.')[-1]
