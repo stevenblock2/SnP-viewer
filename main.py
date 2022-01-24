@@ -9,7 +9,7 @@ pd.options.plotting.backend = "plotly"
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.set_page_config(
      page_title="S-Parameter/Touchstone Viewer",
-     page_icon = st.image('https://www.clipartmax.com/png/middle/479-4796538_smithred-smith-chart-logo.png')
+     page_icon = 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Smith_chart_gen.svg',
      layout="wide",
      initial_sidebar_state="expanded",
      menu_items={
