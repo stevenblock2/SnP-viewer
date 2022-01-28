@@ -19,7 +19,7 @@ st.set_page_config(
      }
  )
 
-file = st.sidebar.file_uploader('Upload Touchstone File Here',)
+file = st.sidebar.file_uploader('Upload Touchstone File Here',type=['s1p','s2p','s3p','s4p','s5p','s6p','s7p','s8p','s9p','s10p'])
 if file:
     filename = 'file.'+file.name.split('.')[-1]
     with open(filename,"wb") as f:
